@@ -1,18 +1,34 @@
 {
-    "name": "minha-empresa/projeto-demo",
-    "description": "Projeto de demonstração para Snyk",
+    "name": "seu-projeto/loja-virtual",
+    "description": "Sistema de loja virtual com integrações de marketplaces",
     "type": "project",
     "require": {
-        "php": ">=7.2",
-        "monolog/monolog": "1.24.0",
-        "symfony/http-foundation": "4.2.0",
-        "guzzlehttp/guzzle": "6.3.0",
-        "phpmailer/phpmailer": "5.2.27",
-        "twig/twig": "2.4.0"
+        "php": "^7.4|^8.0",
+        "twig/twig": "^3.4.3",
+        "guzzlehttp/guzzle": "^7.4.4",
+        "guzzlehttp/psr7": "^2.4.5",
+        "symfony/http-foundation": "^5.4",
+        "symfony/security-csrf": "^5.4",
+        "symfony/validator": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.4"
     },
     "autoload": {
         "psr-4": {
-            "MinhaEmpresa\\": "src/"
+            "App\\": "src/"
         }
-    }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 } 
