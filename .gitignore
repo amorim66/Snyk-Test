@@ -1,1 +1,43 @@
-/vendor
+# Dependências do Composer
+/vendor/
+composer.phar
+
+# Cache do Composer
+/composer.lock
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Cache e logs
+/var/
+/logs/
+*.log
+*.cache
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.phpstorm.meta.php
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.swp
+*.swo
+*~
+
+# Arquivos de teste e cobertura
+/phpunit.xml
+.phpunit.result.cache
+/coverage/
+
+# Outros
+/node_modules/
+npm-debug.log
+yarn-error.log
